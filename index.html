@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Maul forsöluvefur</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="hero col s12 z-depth-1">
+          <row>
+            <!--<p class="logo">Maul</p>-->
+            <img src="images/logo.jpg" alt="logo">
+          </row>
+          <row>
+            <p class="sales-pitch-major">Eat conveniently.</p>
+            <p class="sales-pitch-minor">Because lunch happens every day.</p>
+          </row>
+        </div>
+      </div>
+
+      <div class="row">
+        <form class="col s12 m6">
+
+          <div class="row">
+            <div class="input-field col s10 push-s1">
+              <i class="material-icons prefix">business</i>
+              <input type="text" id="company_name" class="validate" placeholder="Costco" required>
+              <label for="company_name">Company Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10 push-s1">
+              <i class="material-icons prefix">place</i>
+              <input type="number" id="zip_code" min="101" max="999" class="validate" placeholder="101">
+              <label for="zip_code">Zip Code</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10 push-s1">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" class="validate" placeholder="kopur@costco.is">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn waves-effect waves-light" name="action">
+            Submit
+          </button>
+          <p id="form-feedback" class="green-text enable-visibility-transition">
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js" async></script>
+  <script src="js/materialize.min.js" async></script>
+  <script>
+      var form = document.querySelector('form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        let feedback = document.querySelector('#form-feedback');
+        feedback.innerText = "Thank you!";
+        setTimeout(function(){
+          feedback.classList.add("hide");
+        }, 2500);
+        this.reset();
+        console.log('submitting form');
+      });
+    </script>
+</html>

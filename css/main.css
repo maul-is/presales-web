@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ededed;
+}
+
+.container {
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch.jpg') no-repeat;
+  height: 92vh;
+}
+
+/*
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-top: 1.5vw;
+  margin-left: 1vw;
+  color: white;
+}
+*/
+
+.sales-pitch-major {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin: 20vh 15px 0;
+}
+
+.sales-pitch-minor {
+  margin-top: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+form {
+  margin-top: 30px;
+}
+
+button {
+  display: inline-block;
+  margin: 0 2em;
+}
+
+#form-feedback {
+  display: inline-block;
+  font-weight: 500;
+}
+
+/*
+.enable-visibility-transition {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.4s 2.5s, opacity 0.4s 2.5s;
+}
+
+#form-feedback:hover {
+  visibility: hidden;
+  opacity: 0;
+}
+*/
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+nav,
+a,
+button {
+  min-width: 48px;
+  min-height: 48px;
+}
