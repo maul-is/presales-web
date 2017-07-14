@@ -48,27 +48,17 @@ button {
   margin: 0 2em;
 }
 
-#form-feedback {
-  display: inline-block;
-  font-weight: 500;
-}
-
-/*
-.enable-visibility-transition {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0.4s 2.5s, opacity 0.4s 2.5s;
-}
-
-#form-feedback:hover {
-  visibility: hidden;
-  opacity: 0;
-}
-*/
-
 .hide {
   visibility: hidden;
   opacity: 0;
+}
+
+/* https://stackoverflow.com/a/36469842/1728563 */
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 0;
+  left: 40%;
 }
 
 img,
