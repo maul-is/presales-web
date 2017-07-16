@@ -50,7 +50,7 @@ body {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .sales-pitch-major {
     font-size: 5vw;
   }
