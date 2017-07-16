@@ -25,20 +25,61 @@ body {
 }
 */
 
+.text-container {
+  position: absolute;
+  margin: 30vh 15px 0;
+}
+
+@media screen and (max-width: 599px) {
+  .sales-pitch-major {
+    font-size: 8vw;
+  }
+
+  .sales-pitch-minor {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sales-pitch-major {
+    font-size: 6vw;
+  }
+
+  .sales-pitch-minor {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .sales-pitch-major {
+    font-size: 5vw;
+  }
+
+  .sales-pitch-minor {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sales-pitch-major {
+    font-size: 60px;
+  }
+
+  .sales-pitch-minor {
+    font-size: 36px;
+  }
+}
+
 .sales-pitch-major {
-  font-size: 50px;
   font-weight: 700;
   color: white;
-  margin: 30vh 15px 0;
-  position: absolute;
+  margin-bottom: 0;
 }
 
 .sales-pitch-minor {
-  margin: calc(30vh + 65px) 15px;
-  font-size: 30px;
   font-weight: 500;
   color: white;
-  position: absolute;
+  margin-top: 0;
 }
 
 form {
