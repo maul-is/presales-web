@@ -7,8 +7,25 @@ body {
   width: 100vw;
 }
 
+@media screen and (max-width: 500px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-600w.jpg');
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 799px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-800w.jpg');
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-1440w.jpg');
+  }
+}
+
 .hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch.jpg');
   background-size: cover;
   height: 92vh;
   position: relative;
