@@ -30,7 +30,7 @@ body {
   margin: 30vh 15px 0;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .sales-pitch-major {
     font-size: 8vw;
   }
@@ -40,7 +40,7 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .sales-pitch-major {
     font-size: 6vw;
   }
