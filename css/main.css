@@ -4,12 +4,14 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
 }
 
 .hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch.jpg') no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch.jpg');
+  background-size: cover;
   height: 92vh;
+  position: relative;
 }
 
 /*
@@ -27,16 +29,16 @@ body {
   font-size: 50px;
   font-weight: 700;
   color: white;
-  margin: 20vh 15px 0;
+  margin: 30vh 15px 0;
+  position: absolute;
 }
 
 .sales-pitch-minor {
-  margin-top: 0;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: calc(30vh + 65px) 15px;
   font-size: 30px;
   font-weight: 500;
   color: white;
+  position: absolute;
 }
 
 form {
@@ -46,11 +48,6 @@ form {
 button {
   display: inline-block;
   margin: 0 2em;
-}
-
-.hide {
-  visibility: hidden;
-  opacity: 0;
 }
 
 /* https://stackoverflow.com/a/36469842/1728563 */
