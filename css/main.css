@@ -62,20 +62,10 @@ body {
   font-weight: 500;
 }
 
-/*
-.logo {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-top: 1.5vw;
-  margin-left: 1vw;
-  color: white;
-}
-*/
-
 .text-container {
-  position: absolute;
-  margin: 30vh 15px 0;
+  position: relative;
+  top: 20vh;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 600px) {
