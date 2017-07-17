@@ -31,6 +31,37 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 500px) {
+  img {
+    max-height: 70px;
+    margin: 5px;
+  }
+
+  .logo-helper {
+    font-size: 30px;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  img {
+    max-height: 100px;
+    margin: 5px;
+  }
+
+  .logo-helper {
+    font-size: 50px;
+    top: 10px;
+  }
+}
+
+.logo-helper {
+  position: absolute;
+  color: white;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 500;
+}
+
 /*
 .logo {
   font-size: 32px;
