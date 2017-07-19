@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&text=maul" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js" defer></script>
     <script src="js/materialize.min.js" defer></script>
+    <script src="js/main.js" async></script>
   </head>
 
   <body>
@@ -60,13 +61,5 @@
 
     </div>
   </body>
-
-  <script>
-      var form = document.querySelector('form');
-      form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        this.reset();
-        Materialize.toast('Takk! Við verðum í bandi.', 4000);
-      });
-    </script>
+  
 </html>
