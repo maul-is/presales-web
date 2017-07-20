@@ -1,39 +1,56 @@
 var form = document.querySelector('form');
-// TODO Url encode for Icelandic characters?
-// No... use FormData object, see https://youtu.be/9Qtvjd0UbAs?t=4m38s
 
-function validateResponse(response) {
+let validateResponse = function(response) {
   if (!response.ok) {
     throw Error(response.statusText);
   }
   return response;
 }
 
-function readResponseAsJSON(response) {
+let readResponseAsJSON = function(response) {
   return response.json();
 }
 
-function logResult(result) {
-  console.log(result);
+let successHandler = function(result) {
+  Materialize.toast('Takk! Við verðum í bandi.', 4000);
+  form.reset();
 }
 
-function logError(error) {
+let errorHandler = function(error) {
+  Materialize.toast('Villa! Sendu okkur bara línu á maul@maul.is og við afgreiðum málið :)', 6000);
   console.log('Looks like there was a problem: \n', error);
+}
+
+let getInputValue = function(id) {
+  return document.getElementById(id).value;
 }
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
-  let formData = new FormData(form);
+
+  let bodyObject = {
+    TableName: 'presales-leads',
+    Item: {
+      ompany: getInputValue('company_name'),
+      zipCode: getInputValue('zip_code'),
+      email: getInputValue('email')
+    }
+  }
+  let bodyJSON = JSON.stringify(bodyObject);
+
+  // If Content-Type is text/plain, CORS can be simpler, see more here
+  // http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "text/plain;charset=UTF-8");
 
   fetch('https://rbaoh16pa5.execute-api.eu-west-1.amazonaws.com/prod', {
     method: 'POST',
-    body: formData
+    mode: 'cors',
+    headers: myHeaders,
+    body: bodyJSON
   })
   .then(validateResponse)
   .then(readResponseAsJSON)
-  .then(logResult)
-  .catch(logError);
-
-  this.reset();
-  Materialize.toast('Takk! Við verðum í bandi.', 4000);
+  .then(successHandler)
+  .catch(errorHandler);  
 });
