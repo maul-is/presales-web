@@ -31,7 +31,7 @@ form.addEventListener("submit", function(e) {
   let bodyObject = {
     TableName: 'presales-leads',
     Item: {
-      ompany: getInputValue('company_name'),
+      company: getInputValue('company_name'),
       zipCode: getInputValue('zip_code'),
       email: getInputValue('email')
     }
@@ -52,5 +52,5 @@ form.addEventListener("submit", function(e) {
   .then(validateResponse)
   .then(readResponseAsJSON)
   .then(successHandler)
-  .catch(errorHandler);  
+  .catch(errorHandler);
 });

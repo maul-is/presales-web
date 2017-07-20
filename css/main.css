@@ -33,25 +33,25 @@ body {
 
 @media screen and (max-width: 500px) {
   img {
-    max-height: 70px;
-    margin: 5px;
+    max-height: 40px;
+    margin: 10px;
   }
 
   .logo-helper {
-    font-size: 30px;
-    top: 15px;
+    font-size: 35px;
+    top: 1px;
   }
 }
 
 @media screen and (min-width: 501px) {
   img {
-    max-height: 100px;
-    margin: 5px;
+    max-height: 70px;
+    margin: 15px;
   }
 
   .logo-helper {
-    font-size: 50px;
-    top: 10px;
+    font-size: 60px;
+    top: 1px;
   }
 }
 
