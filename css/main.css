@@ -1,3 +1,5 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ededed;
@@ -9,19 +11,19 @@ body {
 
 @media screen and (max-width: 500px) {
   .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-600w.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../images/lunch-600w.jpg');
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 799px) {
   .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-800w.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../images/lunch-800w.jpg');
   }
 }
 
 @media screen and (min-width: 800px) {
   .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../images/lunch-1440w.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../images/lunch-1440w.jpg');
   }
 }
 
@@ -145,8 +147,27 @@ video {
 }
 
 nav,
-a,
+a {
+  color: #424242
+  }
 button {
   min-width: 48px;
   min-height: 48px;
+}
+
+.page-footer {
+  background-color: #9e9e9e;
+}
+
+.footer-copyright {
+  background-color: #757575;
+}
+
+.section-divider {
+  background-color: #e0e0e0;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
 }
