@@ -1,5 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ededed;
@@ -148,8 +146,9 @@ video {
 
 nav,
 a {
-  color: #424242
-  }
+  color: #424242;
+}
+
 button {
   min-width: 48px;
   min-height: 48px;
@@ -168,6 +167,6 @@ button {
 }
 
 /* zocial */
-[class*="zocial-"]:before {
+[class*="zocial-"]::before {
   font-family: 'zocial', sans-serif;
 }
