@@ -1,4 +1,8 @@
-import Promise from 'promise-polyfill'; 
+import Promise from 'promise-polyfill';
+
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 
 var form = document.querySelector('form');
 
