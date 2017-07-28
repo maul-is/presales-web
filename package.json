@@ -1,0 +1,25 @@
+{
+  "name": "presales-web",
+  "version": "1.0.0",
+  "description": "A website briefly introducing Maul and allowing companies and restaurant interested in working with us to fill out a form to express their interest.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maul-is/presales-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maul-is/presales-web/issues"
+  },
+  "homepage": "https://github.com/maul-is/presales-web#readme",
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "materialize-css": "^0.100.1"
+  }
+}
