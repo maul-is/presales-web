@@ -1,3 +1,5 @@
+import Promise from 'promise-polyfill'; 
+
 var form = document.querySelector('form');
 
 let validateResponse = function(response) {
