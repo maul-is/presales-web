@@ -20,6 +20,8 @@
     "webpack": "^3.4.1"
   },
   "dependencies": {
-    "materialize-css": "^0.100.1"
+    "materialize-css": "^0.100.1",
+    "promise-polyfill": "6.0.2",
+    "whatwg-fetch": "^2.0.3"
   }
 }

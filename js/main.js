@@ -1,3 +1,5 @@
+import fetch from 'whatwg-fetch';
+
 var form = document.querySelector('form');
 
 let validateResponse = function(response) {
