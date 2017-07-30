@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <title>Maul | Rafrænt mötuneyti</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="../fonts/roboto/Roboto-Medium.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="../fonts/roboto/Roboto-Bold.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&text=maul">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&text=maul" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js" defer></script>
   <script src="js/materialize.min.js" defer></script>
   <script src="build/bundle.js" defer></script>
@@ -19,7 +21,7 @@
     <div class="hero z-depth-1">
       <img src="images/logo-300w.png" alt="Maul logo">
       <span class="logo-helper">maul</span>
-      <div class="text-container">
+      <div class="sales-pitch-container">
         <p class="sales-pitch-major">Hentugt í hádeginu</p>
         <p class="sales-pitch-minor">Við mætum til þín með mötuneytið!</p>
       </div>
@@ -31,8 +33,7 @@
           <div class="icon-block">
             <h2 class="center"><i class="material-icons">local_dining</i></h2>
             <h5 class="center">Fjölbreytt mataræði</h5>
-
-            <p class="light">
+            <p class="light responsive-text">
               Á hverjum degi bjóðum við upp á tvo til þrjá vel valda rétti frá mismunandi veitingastöðum. Þú velur þína rétti á fimmtudögum og hversu oft þú verður í mat yfir vikuna. Við mætum síðan á vinnustaðinn í hádeginu og látum þig vita þegar maturinn er
               tilbúinn.
           </div>
@@ -42,8 +43,7 @@
           <div class="icon-block">
             <h2 class="center"><i class="material-icons">wb_sunny</i></h2>
             <h5 class="center">Heimsend hamingja</h5>
-
-            <p class="light">
+            <p class="light responsive-text">
               Hjá maul geta vinnustaðir boðið starfsmönnum sínum upp á ljúffengan hádegismat á einfaldan og þægilegan máta. Hver og ein fær þann rétt sem hún óskar sér, hádegishléið nýtist betur og allir saddir og sælir! Skapið góðan starfsanda þar sem vinnufélagar
               borða saman í hádeginu.
           </div>
@@ -52,35 +52,20 @@
     </div>
 
     <!-- SVG icons from https://simpleicons.org/ -->
-    <section class="section-divider">
-      <div class="row">
-        <div class="col s1 offset-s1">
-          <a href="https://www.facebook.com/maulreykjavik/" target="_blank" rel="noopener">
-            <img src="icons/facebook.svg" width="200" height="200" alt="Facebook icon"/>
-          </a>
-        </div>
-        <div class="col s1 offset-s1">
-          <a href="https://www.linkedin.com/company/24794852/" target="_blank" rel="noopener">
-            <img src="icons/linkedin.svg" width="200" height="200" alt="LinkedIn icon"/>
-          </a>
-        </div>
-        <div class="col s1 offset-s1">
-          <a href="https://twitter.com/neatPuffin" target="_blank" rel="noopener">
-            <img src="icons/twitter.svg" width="200" height="200" alt="Twitter icon"/>
-          </a>
-        </div>
-        <div class="col s1 offset-s1">
-          <a href="http://maul.business.site/" target="_blank" rel="noopener">
-            <img src="icons/googleplus.svg" width="200" height="200" alt="Google Plus icon"/>
-          </a>
-        </div>
-        <div class="col s1 offset-s1">
-          <a href="error.html" target="_blank" rel="noopener">
-            <img src="icons/instagram.svg" width="200" height="200" alt="Instagram icon"/>
-          </a>
-        </div>
-        </row>
-    </section>
+    <div class="row">
+      <div class="section-divider col s3 offset-s4">
+          <div class="inline-block">
+            <a href="https://www.facebook.com/maulreykjavik/" target="_blank" rel="noopener">
+              <img src="icons/facebook.svg" width="100" height="200" alt="Facebook icon"/>
+            </a>
+          </div>
+          <div class="inline-block">
+            <a href="https://www.linkedin.com/company/24794852/" target="_blank" rel="noopener">
+              <img src="icons/linkedin.svg" width="100" height="200" alt="LinkedIn icon"/>
+            </a>
+          </div>
+      </div>
+    </div>
 
     </br>
 
@@ -135,7 +120,7 @@
         <div class="row">
           <div class="col l5 m8 s10 push-s1 push-m1 offset-l1">
             <h5 class="white-text">Um fyrirtækið</h5>
-            <p class="grey-text text-lighten-4">
+            <p class="grey-text text-lighten-4 responsive-text">
               Maul ehf. var stofnað á vormánuðum 2017 og fékk inngöngu í viðskiptahraðal Startup Reykjavík. Það góða fólk sem þar starfar hefur veitt okkur ómælda hjálp og stuðning við fyrstu skref þessa nýja félags og við þökkum þeim innilega fyrir það. Við stefnum
               á að hefja rekstur haustið 2017 og byrjum á að senda mat til fyrirtækja innan ákveðinna hverfa í Reykjavík í fyrstu. Við vonumst til að geta þjónað öllu höfuðborgarsvæðinu áður en veturinn er liðinn.
             </p>
@@ -148,7 +133,7 @@
               <li><a class="white-text" target="_blank" rel="noopener" href="mailto:hrafnkell@maul.is">Hrafnkell Pálsson</a></li>
               <li><a class="white-text" target="_blank" rel="noopener" href="mailto:egill@maul.is">Egill Pálsson</a></li>
             </ul>
-            Áhugasömum veitingastöðum bendum við á að hafa samband í netfangið <a class="white-text" target="_blank" rel="noopener"  href="mailto:maul@maul.is">maul@maul.is</a>
+            <p class="responsive-text">Áhugasömum veitingastöðum bendum við á að hafa samband í netfangið <a class="white-text" target="_blank" rel="noopener"  href="mailto:maul@maul.is">maul@maul.is</a></p>
           </div>
         </div>
       </div>

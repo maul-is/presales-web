@@ -62,7 +62,7 @@ body {
   font-weight: 500;
 }
 
-.text-container {
+.sales-pitch-container {
   position: relative;
   top: 20vh;
   margin-left: 15px;
@@ -76,9 +76,13 @@ body {
   .sales-pitch-minor {
     font-size: 6vw;
   }
+
+  .responsive-text {
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 799px) {
   .sales-pitch-major {
     font-size: 6vw;
   }
@@ -86,15 +90,23 @@ body {
   .sales-pitch-minor {
     font-size: 4vw;
   }
+
+  .responsive-text {
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1199px) {
   .sales-pitch-major {
     font-size: 5vw;
   }
 
   .sales-pitch-minor {
     font-size: 3vw;
+  }
+
+  .responsive-text {
+    font-size: 18px;
   }
 }
 
@@ -105,6 +117,10 @@ body {
 
   .sales-pitch-minor {
     font-size: 36px;
+  }
+
+  .responsive-text {
+    font-size: 20px;
   }
 }
 
@@ -164,9 +180,11 @@ button {
 
 .section-divider {
   background-color: #e0e0e0;
+  /*border-style: solid;
+  border-width: 10px;
+  border-color: red;*/
 }
 
-/* zocial */
-[class*="zocial-"]::before {
-  font-family: 'zocial', sans-serif;
+.inline-block {
+  display: inline-block;
 }
