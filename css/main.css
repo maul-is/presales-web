@@ -173,21 +173,9 @@ button {
   left: 40%;
 }
 
-img,
-embed,
-object,
-video {
-  max-width: 100%;
-}
-
 nav,
 a {
   color: #424242;
-}
-
-button {
-  min-width: 48px;
-  min-height: 48px;
 }
 
 .footer-copyright {
@@ -205,5 +193,26 @@ button {
 hr.style13 {
 	height: 10px;
 	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	box-shadow: 0 10px 10px -10px #009688 inset;
+}
+
+footer {
+  position: relative;
+}
+
+.social-icon {
+  position: relative;
+  display: inline-block;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100% !important;
+}
+
+button, a {
+  min-width: 48px !important;
+  min-height: 48px !important;
 }
