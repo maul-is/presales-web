@@ -77,7 +77,7 @@ body {
     font-size: 6vw;
   }
 
-  .responsive-p-text {
+  .responsive-text {
     font-size: 16px;
   }
 
@@ -95,7 +95,7 @@ body {
     font-size: 4vw;
   }
 
-  .responsive-p-text {
+  .responsive-text {
     font-size: 16px;
   }
 
@@ -113,7 +113,7 @@ body {
     font-size: 3vw;
   }
 
-  .responsive-p-text {
+  .responsive-text {
     font-size: 17px;
   }
 
@@ -131,7 +131,7 @@ body {
     font-size: 36px;
   }
 
-  .responsive-p-text {
+  .responsive-text {
     font-size: 18px;
   }
 
@@ -209,10 +209,14 @@ img,
 embed,
 object,
 video {
-  max-width: 100% !important;
+  max-width: 100%;
 }
 
-button, a {
-  min-width: 48px !important;
-  min-height: 48px !important;
+button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+li {
+  padding: 5px 0 5px 0;
 }
