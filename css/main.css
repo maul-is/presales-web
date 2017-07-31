@@ -173,24 +173,7 @@ button {
   left: 40%;
 }
 
-nav,
-a {
-  color: #424242;
-}
-
-.footer-copyright {
-  background-color: #757575;
-}
-
-.section-divider {
-  background-color: #e0e0e0;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-hr.style13 {
+hr.green-divider {
 	height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #009688 inset;
@@ -205,6 +188,10 @@ footer {
   display: inline-block;
 }
 
+.tall-li {
+  padding: 5px 0 5px 0;
+}
+
 img,
 embed,
 object,
@@ -215,8 +202,4 @@ video {
 button {
   min-width: 48px;
   min-height: 48px;
-}
-
-li {
-  padding: 5px 0 5px 0;
 }
