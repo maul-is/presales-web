@@ -180,7 +180,9 @@ button {
 hr.green-divider {
 	height: 10px;
 	border: 0;
-	box-shadow: 0 10px 10px -10px #388e3c inset;
+	/*box-shadow: 0 10px 10px -10px #388e3c inset;*/
+  box-shadow: 0 10px 10px -10px #5a9216 inset;
+
 }
 
 footer {
