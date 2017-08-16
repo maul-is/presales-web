@@ -6,43 +6,49 @@ if (!window.Promise) {
 
 var form = document.querySelector('form');
 
-let validateResponse = function(response) {
+var validateResponse = function(response) {
   if (!response.ok) {
     throw Error(response.statusText);
   }
   return response;
 }
 
-let readResponseAsJSON = function(response) {
+var readResponseAsJSON = function(response) {
   return response.json();
 }
 
-let successHandler = function(result) {
+var successHandler = function(result) {
   Materialize.toast('Takk! Við verðum í bandi.', 4000);
   form.reset();
 }
 
-let errorHandler = function(error) {
+var errorHandler = function(error) {
   Materialize.toast('Villa! Sendu okkur bara línu á maul@maul.is og við afgreiðum málið :)', 6000);
   console.log('Looks like there was a problem: \n', error);
 }
 
-let getInputValue = function(id) {
+var getInputValue = function(id) {
   return document.getElementById(id).value;
+}
+
+var getChecked = function() {
+  return document.getElementById("newsletter").checked;
 }
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  let bodyObject = {
+  var bodyObject = {
     TableName: 'presales-leads',
     Item: {
       company: getInputValue('company_name'),
       zipCode: getInputValue('zip_code'),
-      email: getInputValue('email')
+      email: getInputValue('email'),
+      numEmployees: getInputValue('num_employees'),
+      newsletter: getChecked(),
     }
   }
-  let bodyJSON = JSON.stringify(bodyObject);
+  var bodyJSON = JSON.stringify(bodyObject);
 
   // If Content-Type is text/plain, CORS can be simpler, see more here
   // http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html

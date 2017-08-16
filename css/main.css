@@ -165,6 +165,10 @@ button {
   margin: 0 2em;
 }
 
+.newsletter {
+  margin-top: -15px;
+}
+
 /* https://stackoverflow.com/a/36469842/1728563 */
 #toast-container {
   top: auto !important;
